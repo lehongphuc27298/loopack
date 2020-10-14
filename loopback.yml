@@ -8,9 +8,9 @@
           name: loopback {{ item.name}}
           ipv4: 10.0.{{item.ip}}.1/24
       with_items:
-          - {name: "0", ip: 1}
-          - {name: "1", ip: 2}
-          - {name: "2", ip: 3}
+          - {name: 0, ip: 1}
+          - {name: 1, ip: 2}
+          - {name: 2, ip: 3}
     - name: xem ip cac cong
       ios_command:
           command: "sh ip int bri"
